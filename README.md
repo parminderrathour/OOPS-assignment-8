@@ -43,11 +43,13 @@ It demonstrates both **function templates** and **class templates** with practic
 
 | Q#  | Topic             | Description                                  |
 | --- | ----------------- | -------------------------------------------- |
+|                           Function Template                            |
 | Q1  | Function Template | Swap two values using a generic function     |
 | Q2  | Function Template | Find minimum element in an array             |
 | Q3  | Function Template | Find maximum element in an array             |
 | Q4  | Function Template | Bubble sort using templates                  |
 | Q5  | Function Template | Linear search using templates                |
+|                           Class Template                               |
 | Q6  | Class Template    | Stack implementation using templates         |
 | Q7  | Class Template    | Queue implementation using templates         |
 | Q8  | Class Template    | Pair class with two different data types     |
