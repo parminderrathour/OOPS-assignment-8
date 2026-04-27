@@ -36,7 +36,6 @@ After swapping: x = 20, y = 10
 Before swapping: a = 5.5, b = 8.8
 After swapping: a = 8.8, b = 5.5
     
-As you can see, the swapValues template works for swapping values of different types, making your code more generic and reusable.
 
 //Q2: Here's a C++ program that uses a template to find the minimum value in an array:
 
