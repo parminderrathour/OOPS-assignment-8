@@ -1,3 +1,5 @@
+Submitted by : Parminder singh 
+submitted to : Mr. Rajendra kumar 
 /*
 //Question:1
 #include <iostream>
@@ -13,7 +15,6 @@ void swapValues(T &a, T &b) {
 int main() {
     int x = 5, y = 10;
     swapValues(x, y);
-
     cout << x << " " << y << endl;
     return 0;
 }
@@ -82,7 +83,6 @@ T bubbleSort(T arr[], int size) {
 int main() {
     float arr[] = {5.6, 3.2, 1.3, 4.0, 2.2};
     bubbleSort(arr, 5);
-
     cout << "Sorted array: ";
     for(int i = 0; i < 5; i++)
         cout << arr[i] << " ";
@@ -104,14 +104,11 @@ int linearSearch(T arr[], int size, T key) {
     }
     return -1;
 }
-
 int main() {
     int arr[] = {10, 20, 30, 40, 50};
     int key = 30;
-
     int index = linearSearch(arr, 5, key);
     cout << "Element found at index: " << index;
-
     return 0;
 }
 */
@@ -127,15 +124,12 @@ class Stack {
     int top;
 public:
     Stack() { top = -1; }
-
     void push(T value) {
         arr[++top] = value;
     }
-
     void pop() {
         top--;
     }
-
     void display() {
         for(int i = top; i >= 0; i--)
             cout << arr[i] << " ";
@@ -147,14 +141,11 @@ int main() {
     s.push(10);
     s.push(20);
     s.push(30);
-
     cout << "Stack: ";
     s.display();
-
     s.pop();
     cout << "\nAfter pop: ";
     s.display();
-
     return 0;
 }
 */
@@ -172,15 +163,12 @@ public:
         front = 0;
         rear = -1;
     }
-
     void enqueue(T value) {
         arr[++rear] = value;
     }
-
     void dequeue() {
         front++;
     }
-
     void display() {
         for(int i = front; i <= rear; i++)
             cout << arr[i] << " ";
@@ -192,14 +180,11 @@ int main() {
     q.enqueue(1);
     q.enqueue(2);
     q.enqueue(3);
-
     cout << "Queue: ";
     q.display();
-
     q.dequeue();
     cout << "\nAfter dequeue: ";
     q.display();
-
     return 0;
 }
 */
@@ -217,12 +202,10 @@ public:
         a = x;
         b = y;
     }
-
     void display() {
         cout << a << " " << b;
     }
 };
-
 int main() {
     Pair<int, string> p(1, "Hello");
     p.display();
@@ -242,15 +225,12 @@ public:
     T mul(T a, T b) { return a * b; }
     T div(T a, T b) { return a / b; }
 };
-
 int main() {
     Calculator<int> c;
-
     cout << "Add: " << c.add(10, 5) << endl;
     cout << "Sub: " << c.sub(10, 5) << endl;
     cout << "Mul: " << c.mul(10, 5) << endl;
     cout << "Div: " << c.div(10, 5);
-
     return 0;
 }
     */
@@ -269,23 +249,18 @@ public:
         for(int i = 0; i < size; i++)
             cin >> arr[i];
     }
-
     void display() {
         for(int i = 0; i < size; i++)
             cout << arr[i] << " ";
     }
 };
-
 int main() {
     Array<int> a;
-
     int n;
     cout << "Enter size: ";
     cin >> n;
-
     cout << "Enter elements: ";
     a.input(n);
-
     cout << "Array: ";
     a.display();
 
